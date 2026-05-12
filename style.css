@@ -712,6 +712,12 @@ footer a:hover {
     .management-person p {
         font-size: 14px;
     }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        font-size: 16px;
+    }
  
     /* footer */
     footer {
