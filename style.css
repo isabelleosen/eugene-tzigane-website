@@ -589,7 +589,23 @@ footer a:hover {
         background-color: #444;
     }
 
+.masterclass-dates {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
 
+.masterclass-date-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.date-separator {
+    font-size: 18px;
+    color: #777;
+}
 
 /*-- RESPONSIVE --*/
 
