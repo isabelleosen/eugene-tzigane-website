@@ -280,7 +280,7 @@ nav {
 
 
 #message {
-   padding: 100px 80px;
+   padding: 60px 20px;
     background-color: #f9f9f9;
     text-align: center;
 }
@@ -370,10 +370,14 @@ footer a:hover {
 }
 
 #page-header {
+    justify-content: center;
     font-size: 2vw;
     text-align: center;
     background-color: #f9f9f9;
     padding: 60px;
+    border-bottom: 1px solid #ddd;
+    width: 60%;
+    margin: 0 auto;
 }
 
 .bio-block {
@@ -463,6 +467,128 @@ footer a:hover {
     line-height: 1.8;
     color: #444;
 }
+
+/* -- SCHEDULE PAGE --*/
+
+#schedule-page {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 80px 100px;
+    background-color: #f9f9f9;
+}
+
+.schedule-item {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    gap: 50px;
+    padding: 50px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.schedule-date {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.schedule-month {
+    display: block;
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.schedule-day {
+    display: block;
+    font-size: 42px;
+    line-height: 1;
+    color: #222;
+}
+
+.schedule-details h2 {
+    font-size: 28px;
+    letter-spacing: 2px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #222;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.highlight-title {
+    font-weight: 700;
+}
+
+.schedule-content {
+    max-width: 700px;
+}
+
+.schedule-meta {
+    font-size: 15px;
+    color: #777;
+    margin-bottom: 35px;
+    line-height: 1.6;
+}
+
+.schedule-programme {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 35px;
+}
+
+.schedule-programme hr {
+    border: none;
+    border-top: 1px solid #777;
+    margin: 25px 0;
+}
+
+.programme-work {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.composer {
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #222;
+}
+
+.piece {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #444;
+}
+
+.schedule-performers p {
+    font-size: 16px;
+    line-height: 1.7;
+    font-style: italic;
+    font-weight: bolder;
+    color: #222;
+}
+
+.schedule-button {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 14px 28px;
+        background-color: #222;
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 12px;
+        border-radius: 0 20px 0 20px;
+        transition: background-color o.3s ease;
+    }
+
+    .schedule-button:hover {
+        background-color: #444;
+    }
+
 
 
 /*-- RESPONSIVE --*/
@@ -713,11 +839,58 @@ footer a:hover {
         font-size: 14px;
     }
 
+    .contact-form {
+    width: 100%;
+    }
+
     .contact-form input,
     .contact-form textarea {
         width: 100%;
         font-size: 16px;
     }
+
+    /* schedule */
+
+    #schedule-page {
+        padding: 60px 20px;
+    }
+
+    .schedule-item {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 40px 0;
+    }
+
+    .schedule-date {
+        text-align: center;
+    }
+
+    .schedule-day {
+        font-size: 34px;
+    }
+
+    .schedule-details h2 {
+        font-size: 22px;
+        line-height: 1.3;
+    }
+
+    .schedule-meta {
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+
+    .composer {
+        font-size: 14px;
+    }
+
+    .piece,
+    .schedule-performers p {
+        font-size: 15px;
+    }
+
+
+
+
  
     /* footer */
     footer {
