@@ -333,7 +333,7 @@ const events = [
         time: "ganztägig",
         venue: "Sindelfingen",
         description: [
-            "<strong>Mahlerlieder-Meisterkurs</strong>",
+            "<strong>Mahlerlieder-Meisterkurs</strong><br>mit Dirigent Eugene Tzigane",
             "für Pianist*innen und Sänger*innen",
             "<em>So. 2. August 2026: Mahler-Matinee</em>"
         ],
@@ -426,6 +426,9 @@ if (schedulePage) {
                 </p>
 
             ${isMasterclass ? `
+                <hr>
+                <br>
+                <br>
                 <div class="schedule-programme masterclass-info">
                     ${descriptionHTML}
                 </div> 
