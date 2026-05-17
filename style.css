@@ -12,9 +12,9 @@ html, body {
 
 body {
     font-family: Georgia, serif;
-    color: #222;
+    color: #310101;
     padding-top: 120px;
-    background-color: #f9f9f9;
+    background-color: #faf7f3;
 }
 
 /* -- NAVIGATION --*/
@@ -48,12 +48,11 @@ nav {
    list-style: none;
    display: flex;
    gap: 25px; 
-   flex-shrink: 0;
 }
 
 .nav-links a {
     text-decoration: none;
-    color: #222;
+    color: #310101;
     font-size: 18px;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -79,13 +78,107 @@ nav {
     display: block;
     width: 40px;
     height: 4px;
-    background-color: #222;
+    background-color: #310101;
     border-radius: 999px;
 }
 
 .hamburger span:nth-child(2) {
     width: 32px;
     align-self: center;
+}
+
+/*-- MEDIA QUERIES for NAV--*/
+
+/* medium dektop: nav links wrap */
+@media (max-width: 1700px) and (min-width: 1173px) {
+    nav {
+        gap: 30px;
+        height: 120px;
+        min-height: 120px;
+        padding: 20px 20px;
+    }
+    
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-content: center;
+        row-gap: 4px;
+        column-gap: 22px;
+        max-width: 850px;
+    }  
+
+    .nav-links a {
+        font-size: 16px;
+        letter-spacing: 1.5px;
+    }
+}
+
+/* nav only: hamburger starst earlier */
+@media (max-width: 1172px) {
+    .hamburger {
+        display: flex;
+        margin-left: auto;
+    }
+    
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 120px;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 30px 20px;
+        border-top: 1px solid #ddd;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1172px) and (min-width: 901px) {
+    .hamburger {
+        gap: 14px;
+        padding: 0;
+    }
+
+    .hamburger span {
+        width: 80px;
+        height: 8px;
+    }
+
+    .hamburger span:nth-child(2) {
+        width: 64px;
+    }
+}
+
+/* tablet: smaller nav height */
+@media (max-width: 900px) {
+
+    body {
+        padding-top: 80px;
+    }
+
+    nav {
+        height: 80px;
+        min-height: 80px;
+        padding: 10px 20px;
+    }
+
+    .nav-logo img {
+        height: 60px;
+    }
+
+    .nav-links {
+        top: 80px;
+    }
 }
 
 
@@ -123,13 +216,13 @@ nav {
     text-transform: uppercase;
 }
 
-/*-- BIO SECTION --*/
+/*--  HOME BIO --*/
 #bio {
     display: flex;
     align-items: stretch;
     gap: 60px;
     padding: 100px 80px;
-    background-color: #f9f9f9;
+    background-color: #faf7f3;
 }
 
 .bio-image {
@@ -157,18 +250,18 @@ nav {
     font-size: 3vw;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: #222;
+    color: #310101;
     padding-bottom: 20px;
 }
 
 .bio-text p {
     font-size: 18px;
     line-height: 1.8;
-    color: #444;
+    color: #5b3a34;
 }
 
 
-/* -- VIDEO SECTION --*/
+/* -- HOME VIDEO --*/
 #video {
     padding: 100px 80px;
     background-color: #fff;
@@ -179,7 +272,7 @@ nav {
     font-size: 2vw;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: #222;
+    color: #310101;
     margin-bottom: 50px;
 }
 
@@ -198,21 +291,12 @@ nav {
     border: none;
 }
 
-/*-- MEDIA QUERIES --*/
-@media (max-width: 900px) {
-    .nav-links {
-        display:none;
-    }
 
-    .nav-logo a {
-        font-size: 14px;
-    }
-}
 
-/*-- CONTACT SECTION --*/
+/*-- CONTACT --*/
 #contact-info {
     padding: 100px 80px;
-    background-color: #f9f9f9;
+    background-color: #faf7f3;
     text-align: center;
 }
 
@@ -220,7 +304,7 @@ nav {
     font-size: 4vw;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: #222;
+    color: #310101;
     margin-bottom: 60px;
 }
 
@@ -248,7 +332,7 @@ nav {
     font-size: 20px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: #222;
+    color: #310101;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -256,7 +340,7 @@ nav {
 .management-column p {
     font-size: 18px;
     line-height: 2;
-    color: #444;
+    color: #5b3a34;
 }
 
 .management-person {
@@ -266,14 +350,14 @@ nav {
 .management-person p {
     font-size: 18px;
     line-height: 1.6;
-    color: #444;
+    color: #5b3a34;
     margin-bottom: 2px;
 }
 
 .management-person-assistant p {
     font-size: 17px;
     line-height: 1.6;
-    color: #444;
+    color: #5b3a34;
     margin-bottom: 2px;
 }
 
@@ -281,7 +365,7 @@ nav {
 
 #message {
    padding: 60px 20px;
-    background-color: #f9f9f9;
+    background-color: #faf7f3;
     text-align: center;
 }
 
@@ -289,7 +373,7 @@ nav {
    font-size: 4vw;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: #222;
+    color: #270b0b;
     margin-bottom: 60px; 
 }
 
@@ -305,7 +389,7 @@ nav {
     font-family: Georgia, serif;
     border: 1px solid #ddd;
     background-color: #fff;
-    color: #222;
+    color: #310101;
     outline: none;
     text-align: center;
     border-radius:15px 15px 15px 15px;
@@ -320,7 +404,7 @@ nav {
 #message button {
     align-self: center;
     padding: 15px 40px;
-    background-color: #222;
+    background-color: #270b0b;
     color: #fff;
     font-size: 13px;
     letter-spacing: 2px;
@@ -332,7 +416,7 @@ nav {
 }
 
 #message button:hover {
-    background-color: #444;
+    background-color: #5b3a34;
 }
 
 
@@ -343,7 +427,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 30px 80px;
-    background-color: #222;
+    background-color: #270b0b;
     color: #aaa;
     font-size: 12px;
     letter-spacing: 1px;
@@ -362,18 +446,17 @@ footer a:hover {
 
 
 
-/*-- ABOUT BIO --*/
-
+/*-- ABOUT PAGE --*/
 
 #about-bio {
-    background-color: #f9f9f9;
+    background-color: #faf7f3;
 }
 
 #page-header {
     justify-content: center;
     font-size: 2vw;
     text-align: center;
-    background-color: #f9f9f9;
+    background-color: #faf7f3;
     padding: 60px;
     border-bottom: 1px solid #ddd;
     width: 60%;
@@ -393,14 +476,14 @@ footer a:hover {
     font-size: 1.8vw;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: #222;
+    color: #310101;
     margin-bottom: 20px;
 }
 
 .bio-block-text p {
     font-size: 16px;
     line-height: 1.8;
-    color: #444;
+    color: #5b3a34;
     margin-bottom: 15px;
 }
 
@@ -424,9 +507,10 @@ footer a:hover {
 }
 
 /*-- AWARDS --*/
+
 #awards {
     padding: 100px 80px;
-    background-color: #fff;
+    background-color: #faf7f3;
     text-align: center;
 }
 
@@ -434,7 +518,7 @@ footer a:hover {
     font-size: 2vw;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: #222;
+    color: #310101;
     margin-bottom: 60px;
 }
 
@@ -456,16 +540,16 @@ footer a:hover {
     font-size: 13px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: #222;
+    color: #310101;
     padding-bottom: 10px;
-    border-bottom: 1px solid #222;
+    border-bottom: 1px solid #310101;
     margin-bottom: 5px;
 }
 
 .awards-column p {
     font-size: 14px;
     line-height: 1.8;
-    color: #444;
+    color: #5b3a34;
 }
 
 /* -- SCHEDULE PAGE --*/
@@ -474,7 +558,7 @@ footer a:hover {
     max-width: 1000px;
     margin: 0 auto;
     padding: 40px 80px 100px;
-    background-color: #f9f9f9;
+    background-color: #faf7f3;
 }
 
 .schedule-item {
@@ -502,7 +586,7 @@ footer a:hover {
     display: block;
     font-size: 42px;
     line-height: 1;
-    color: #222;
+    color: #310101;
 }
 
 .schedule-details h2 {
@@ -510,7 +594,7 @@ footer a:hover {
     letter-spacing: 2px;
     font-weight: 300;
     text-transform: uppercase;
-    color: #222;
+    color: #310101;
     margin-bottom: 15px;
     line-height: 1.4;
 }
@@ -554,13 +638,13 @@ footer a:hover {
     font-weight: bold;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: #222;
+    color: #310101;
 }
 
 .piece {
     font-size: 17px;
     line-height: 1.7;
-    color: #444;
+    color: #5b3a34;
 }
 
 .schedule-performers p {
@@ -568,25 +652,25 @@ footer a:hover {
     line-height: 1.7;
     font-style: italic;
     font-weight: bolder;
-    color: #222;
+    color: #310101;
 }
 
 .schedule-button {
         display: inline-block;
         margin-top: 10px;
         padding: 14px 28px;
-        background-color: #222;
+        background-color: #310101;
         color: #fff;
         text-decoration: none;
         text-transform: uppercase;
         letter-spacing: 2px;
         font-size: 12px;
         border-radius: 0 20px 0 20px;
-        transition: background-color o.3s ease;
+        transition: background-color 0.3s ease;
     }
 
     .schedule-button:hover {
-        background-color: #444;
+        background-color: #5b3a34;
     }
 
 .masterclass-dates {
@@ -612,9 +696,6 @@ footer a:hover {
 /*-- LARGE DESKTOP (1440px and above) --*/
 
 @media (min-width: 1440px) {
-    .nav-links {
-        gap: 40px;
-    }
 
     .bio-block-text h2 {
         font-size: 2.5vw;
@@ -629,43 +710,6 @@ footer a:hover {
 /*-- TABLET (max 900px) --*/
 
 @media (max-width: 900px) {
-
-    .hamburger {
-        display: flex;
-        margin-left: auto;
-    }
-
-    .nav-links {
-        display: none;
-        position: absolute;
-        top: 80px;
-        left: 0;
-        width: 100%;
-        background-color: #fff;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-        padding: 30px 20px;
-        border-top: 1px solid #ddd;
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-
-    .nav-links a {
-        font-size: 16px;
-    }
-
-    .nav-logo img {
-        height: 60px;
-    }
-
-    nav {
-        height: 80px;
-        min-height: 80px;
-        padding: 10px 20px;
-    }
     
     /*index.html bio*/
     #bio {
@@ -768,7 +812,7 @@ footer a:hover {
         display: flex;
         flex-direction: column;
         gap: 0;
-        padding: 40px 0 40px;
+        padding: 10px 0 40px;
         margin-top: -90px;
     }
 
