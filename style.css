@@ -60,7 +60,7 @@ nav {
 }
 
 .nav-links a:hover {
-    color: #888;
+    color: #a17d74;
 }
 
 .hamburger {
@@ -131,7 +131,7 @@ nav {
         align-items: center;
         gap: 20px;
         padding: 30px 20px;
-        border-top: 1px solid #ddd;
+        border-top: 1px solid #d8cec7;
     }
 
     .nav-links.active {
@@ -387,7 +387,7 @@ nav {
     padding: 15px;
     font-size: 14px;
     font-family: Georgia, serif;
-    border: 1px solid #ddd;
+    border: 1px solid #d8cec7;
     background-color: #fff;
     color: #310101;
     outline: none;
@@ -428,13 +428,13 @@ footer {
     align-items: center;
     padding: 30px 80px;
     background-color: #270b0b;
-    color: #aaa;
+    color: #c2aaa3;
     font-size: 12px;
     letter-spacing: 1px;
 }
 
 footer a {
-    color: #aaa;
+    color: #c2aaa3;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -458,7 +458,7 @@ footer a:hover {
     text-align: center;
     background-color: #faf7f3;
     padding: 60px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #d8cec7;
     width: 60%;
     margin: 0 auto;
 }
@@ -578,7 +578,7 @@ footer a:hover {
 .schedule-month {
     display: block;
     font-size: 14px;
-    color: #777;
+    color: #8b6b63;
     margin-bottom: 5px;
 }
 
@@ -609,7 +609,7 @@ footer a:hover {
 
 .schedule-meta {
     font-size: 15px;
-    color: #777;
+    color: #8b6b63;
     margin-bottom: 35px;
     line-height: 1.6;
 }
@@ -623,7 +623,7 @@ footer a:hover {
 
 .schedule-programme hr {
     border: none;
-    border-top: 1px solid #777;
+    border-top: 1px solid #8b6b63;
     margin: 25px 0;
 }
 
@@ -688,7 +688,7 @@ footer a:hover {
 
 .date-separator {
     font-size: 18px;
-    color: #777;
+    color: #8b6b63;
 }
 
 /*-- RESPONSIVE --*/
