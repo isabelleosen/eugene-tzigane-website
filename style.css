@@ -22,7 +22,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 20px 40px 20px;
+    padding: 40px 40px;
     background-color: #fefcfb;
     position: fixed;
     top: 0;
@@ -32,6 +32,7 @@ nav {
     height: 120px;
     min-height: 120px;
     width: 100%;
+    gap: 40px;
 }
 
 .nav-logo {
@@ -47,14 +48,14 @@ nav {
 .nav-links {
    list-style: none;
    display: flex;
-   gap: 25px; 
+   gap: 20px; 
 }
 
 .nav-links a {
     text-decoration: none;
     color: #310101;
     font-size: 18px;
-    letter-spacing: 2px;
+    letter-spacing: 1.7x;
     text-transform: uppercase;
     white-space: nowrap;
 }
@@ -952,6 +953,18 @@ footer a:hover {
     .piece,
     .schedule-performers p {
         font-size: 15px;
+    }
+
+
+    #manifesto-page {
+        justify-content: center;
+        font-size: 2vw;
+        text-align: center;
+        background-color: #faf7f3;
+        padding: 60px;
+        border-bottom: 1px solid #d8cec7;
+        width: 60%;
+        margin: 0 auto;
     }
 
 
