@@ -461,7 +461,7 @@ footer a:hover {
     background-color: #faf7f3;
     padding: 60px;
     border-bottom: 1px solid #d8cec7;
-    width: 60%;
+    width: 100%%;
     margin: 0 auto;
 }
 
@@ -697,6 +697,51 @@ footer a:hover {
     font-size: 18px;
     color: #8b6b63;
 }
+
+/* manifesto */
+
+    #manifesto-header {
+        padding: 220px 40px 120px;
+        text-align: center;
+    }
+
+    #manifesto-header h1 {
+        font-size: 4rem;
+        line-height: 1.1;
+        max-width: 900px;
+        margin: 0 auto;
+        color: #310101
+    }
+
+    .manifesto-block {
+        max-width: 850px;
+        margin: 0 auto;
+        padding: 80px 40px 120px;
+        background-color: #faf7f3;
+    }
+
+    .manifesto-author {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 1.4rem;
+        font-style: italic;
+        color: #6b4c4c;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .manifesto-text p {
+        font-size: 1.15rem;
+        line-height: 2;
+        color: #310101;
+    }
+
+    .manifesto-text p:first-child::first-letter {
+        float: left;
+        font-size: 4rem;
+        line-height: 0.8;
+        padding-right: 8px;
+        font-family: "Cormorant Garamond", serif;
+    }
 
 /*-- RESPONSIVE --*/
 
@@ -955,20 +1000,7 @@ footer a:hover {
         font-size: 15px;
     }
 
-
-    #manifesto-page {
-        justify-content: center;
-        font-size: 2vw;
-        text-align: center;
-        background-color: #faf7f3;
-        padding: 60px;
-        border-bottom: 1px solid #d8cec7;
-        width: 60%;
-        margin: 0 auto;
-    }
-
-
-
+    
 
  
     /* footer */
