@@ -1,4 +1,7 @@
 /* -- RESET & BASE --*/
+
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -23,7 +26,15 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 40px 40px;
-    background-color: #fefcfb;
+    background: linear-gradient(
+        90deg,
+        #faf7f3 0%,
+        #fffdf8 24%,
+        #f6f1e9 50%,
+        #ffffff 74%,
+        #efe6d2 100%
+    );
+    border-bottom: 1px solid rgba(156, 123, 58, 0.15);
     position: fixed;
     top: 0;
     z-index: 100;
@@ -45,6 +56,64 @@ nav {
     display: block;
 }
 
+.nav-logo img.logo-full {
+    height: 120px;
+    width: auto;
+}
+
+/* initial state */
+.logo-initials {
+    display: block;
+}
+
+.home-nav .logo-full {
+    display: none;
+}
+
+/* scrolled state */
+
+.home-nav.scrolled .logo-initials {
+    display: none;
+}
+
+.home-nav.scrolled .logo-full {
+    display: block;
+}
+
+.logo-initials {
+    font-family: "Dyer Arts and Crafts";
+    font-size: 100px;
+
+    display: flex;
+    align-items: center;
+    gap: 0.5px;
+}
+
+.logo-letter {
+    color:#310101;
+    -webkit-text-fill-color: #310101;
+    text-shadow: 4px 4px 1px rgba(49, 30, 1, 0.235);
+}
+
+
+.logo-diamond {
+    width: 25px;
+    height: 25px;
+    display: block;
+    margin-right: -10px;
+    margin-top: 10px;
+    margin-left: -5px;
+
+}
+
+.nav-logo a,
+.nav-logo a:link,
+.nav-logo a:visited,
+.nav-logo a:hover,
+.nav-logo a:active {
+    text-decoration: none;
+}
+
 .nav-links {
    list-style: none;
    display: flex;
@@ -61,7 +130,24 @@ nav {
 }
 
 .nav-links a:hover {
-    color: #a17d74;
+    color: #c8a96a;
+}
+
+.nav-links a.active-link {
+    background-image: linear-gradient(
+        90deg,
+        #9c7b3a 0%,
+        #c8a96a 35%,
+        #f3e1a0 50%,
+        #c8a96a 65%,
+        #9c7b3a 100%
+    );
+
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    color: transparent;
+    -webkit-text-fill-color: transparent;
 }
 
 .hamburger {
@@ -127,12 +213,18 @@ nav {
         top: 120px;
         left: 0;
         width: 100%;
-        background-color: #fefcfb;
+        background: linear-gradient(
+        90deg,
+        #faf7f3 0%,
+        #fffdf8 24%,
+        #f6f1e9 50%,
+        #ffffff 74%,
+        #efe6d2 100%
+    );
         flex-direction: column;
         align-items: center;
         gap: 20px;
         padding: 30px 20px;
-        border-top: 1px solid #d8cec7;
     }
 
     .nav-links.active {
@@ -177,6 +269,22 @@ nav {
         height: 60px;
     }
 
+    .logo-initials {
+        font-size: 60px;
+        gap: 0.5px;
+    }
+
+    .logo-diamond {
+        width: 15px;
+        height: 15px;
+        margin-left: -2px;
+        margin-right: -6px;
+    }
+
+    .home-nav .nav-logo img.logo-full {
+        height: 60px;
+    }
+
     .nav-links {
         top: 80px;
     }
@@ -199,22 +307,62 @@ nav {
     position: sticky;
     top: 8vh;
     margin-right: 5vw;
-    color: #fefcfb;
     text-align: end;
 }
 
 .hero-overlay h1 {
-    font-size: 4vw;
-    font-weight: bold;
+    font-size: 5.5vw;
     letter-spacing: 0.3vw;
-    text-transform: uppercase;
     margin-bottom: 1vh;
+    font-weight: lighter;
 }
 
 .hero-overlay p {
-    font-size: 1.5vw;
+    font-family: "Dyer Arts and Crafts";
+    font-size: 2vw;
     letter-spacing: 0.4vw;
-    text-transform: uppercase;
+    color: #b4874c;
+}
+
+@font-face {
+    font-family: "Dyer Arts and Crafts";
+    src: url("fonts/DyerArtsAndCrafts.ttf") format("truetype");
+}
+
+.gold-text {
+
+    font-family: "Dyer Arts and Crafts";
+    display: block;
+
+    background-image: linear-gradient(
+    90deg,
+    #5c3e1d 0%,
+    #7b5328 10%,
+    #9a6c37 25%,
+    #b4874c 38%,
+    #c8a96a 45%,
+    #e2c998 48%,
+    #c8a96a 50%,
+    #b4874c 68%,
+    #9a6c37 82%,
+    #5c3e1d 100%
+);
+
+
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+
+
+   filter:
+    drop-shadow(0 6px 10px black)
+    drop-shadow(0 2px 4px rgba(255,245,200,0.15));
+
+    width: fit-content;
+    margin-left: auto;
+    letter-spacing: 0.08em;
 }
 
 /*--  HOME BIO --*/
@@ -223,7 +371,14 @@ nav {
     align-items: stretch;
     gap: 60px;
     padding: 100px 80px;
-    background-color: #faf7f3;
+    background: linear-gradient(
+        90deg,
+        #faf7f3 0%,
+        #fffdf8 24%,
+        #f6f1e9 50%,
+        #ffffff 74%,
+        #efe6d2 100%
+    );
 }
 
 .bio-image {
@@ -253,7 +408,7 @@ nav {
     text-transform: uppercase;
     color: #310101;
     padding-bottom: 20px;
-    text-shadow: 1px 1px 2px rgba(49, 1, 1, 0.40);
+    text-shadow: 1px 0px 2px rgba(49, 1, 1, 0.40);
 }
 
 .bio-text p {
@@ -266,7 +421,14 @@ nav {
 /* -- HOME VIDEO --*/
 #video {
     padding: 100px 80px;
-    background-color: #fefcfb;
+    background: linear-gradient(
+        90deg,
+        #faf7f3 0%,
+        #fffdf8 24%,
+        #f6f1e9 50%,
+        #ffffff 74%,
+        #efe6d2 100%
+    );
     text-align: center;
 }
 
@@ -276,7 +438,7 @@ nav {
     text-transform: uppercase;
     color: #310101;
     margin-bottom: 50px;
-    text-shadow: 1px 1px 2px rgba(49, 1, 1, 0.40);
+    text-shadow: 1px 0px 2px rgba(49, 1, 1, 0.40);
 }
 
 .video-container {
@@ -300,7 +462,14 @@ nav {
 /*-- CONTACT --*/
 #contact-info {
     padding: 100px 80px;
-    background-color: #faf7f3;
+    background: linear-gradient(
+        90deg,
+        #faf7f3 0%,
+        #fffdf8 24%,
+        #f6f1e9 50%,
+        #ffffff 74%,
+        #efe6d2 100%
+    );
     text-align: center;
 }
 
@@ -310,7 +479,7 @@ nav {
     text-transform: uppercase;
     color: #310101;
     margin-bottom: 60px;
-    text-shadow: 1px 1px 3px rgba(49, 1, 1, 0.40);
+    text-shadow: 1px 0px 3px rgba(49, 1, 1, 0.40);
 }
 
 .contacts-wrapper {
@@ -340,7 +509,7 @@ nav {
     color: #310101;
     margin-bottom: 20px;
     text-align: center;
-    text-shadow: 0 0.5px 1px rgba(49, 1, 1, 0.40);
+    text-shadow: 0.5px 0px 1px rgba(49, 1, 1, 0.40);
 }
 
 .management-column p {
@@ -371,7 +540,14 @@ nav {
 
 #message {
    padding: 60px 20px;
-    background-color: #faf7f3;
+    background: linear-gradient(
+        90deg,
+        #faf7f3 0%,
+        #fffdf8 24%,
+        #f6f1e9 50%,
+        #ffffff 74%,
+        #efe6d2 100%
+    );
     text-align: center;
 }
 
@@ -381,7 +557,7 @@ nav {
     text-transform: uppercase;
     color: #270b0b;
     margin-bottom: 60px; 
-    text-shadow: 1px 1px 3px rgba(49, 1, 1, 0.40);
+    text-shadow: 1px 0px 3px rgba(49, 1, 1, 0.40);
 }
 
 .contact-form {
@@ -423,7 +599,14 @@ nav {
 }
 
 #message button:hover {
-    background-color: #5b3a34;
+    background: linear-gradient(
+        90deg,
+        #9c7b3a 0%,
+        #c8a96a 35%,
+        #f3e1a0 50%,
+        #c8a96a 65%,
+        #9c7b3a 100%
+    );
 }
 
 
@@ -434,7 +617,19 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 30px 80px;
-    background-color: #270b0b;
+    background-image: linear-gradient(
+    90deg,
+    #5c3e1d 0%,
+    #7b5328 12%,
+    #9a6c37 25%,
+    #b4874c 38%,
+    #d0ad72 48%,
+    #e2c998 52%,
+    #d0ad72 56%,
+    #b4874c 68%,
+    #9a6c37 82%,
+    #5c3e1d 100%
+);
     color: #c2aaa3;
     font-size: 12px;
     letter-spacing: 1px;
@@ -456,22 +651,35 @@ footer a:hover {
 /*-- ABOUT PAGE --*/
 
 #about-bio {
-    background-color: #faf7f3;
+   background: linear-gradient(
+        90deg,
+        #faf7f3 0%,
+        #fffdf8 24%,
+        #f6f1e9 50%,
+        #ffffff 74%,
+        #efe6d2 100%
+    );
 }
 
 #page-header {
     justify-content: center;
+    background: linear-gradient(
+        90deg,
+        #faf7f3 0%,
+        #fffdf8 24%,
+        #f6f1e9 50%,
+        #ffffff 74%,
+        #efe6d2 100%
+    );
     font-size: 2vw;
     text-align: center;
-    background-color: #faf7f3;
     padding: 60px;
-    border-bottom: 1px solid #d8cec7;
-    width: 100%%;
+    width: 100%;
     margin: 0 auto;
 }
 
 #page-header h1 {
-    text-shadow: 1px 1px 3px rgba(49, 1, 1, 0.40);
+    text-shadow: 1px 0px 3px rgba(49, 1, 1, 0.40);
 }
 
 .bio-block {
@@ -479,13 +687,11 @@ footer a:hover {
     align-items: stretch;
     gap: 40px;
     padding: 60px 80px;
-    background-color: #faf7f3;
     align-items: stretch;
 }
 
 .bio-block.reverse {
     flex-direction: row-reverse;
-    background-color: #fefcfb;
 }
 
 .bio-block-text {
@@ -501,7 +707,7 @@ footer a:hover {
     text-transform: uppercase;
     color: #310101;
     margin-bottom: 20px;
-    text-shadow: 1px 1px 1px rgba(49, 1, 1, 0.40);
+    text-shadow: 1px 0px 1px rgba(49, 1, 1, 0.40);
 }
 
 
@@ -541,7 +747,14 @@ footer a:hover {
 
 #awards {
     padding: 100px 80px;
-    background-color: #faf7f3;
+    background: linear-gradient(
+        90deg,
+        #faf7f3 0%,
+        #fffdf8 24%,
+        #f6f1e9 50%,
+        #ffffff 74%,
+        #efe6d2 100%
+    );
     text-align: center;
 }
 
@@ -551,7 +764,7 @@ footer a:hover {
     text-transform: uppercase;
     color: #310101;
     margin-bottom: 60px;
-    text-shadow: 1px 1px 1px rgba(49, 1, 1, 0.40);
+    text-shadow: 1px 0px 1px rgba(49, 1, 1, 0.40);
 }
 
 .awards-wrapper {
@@ -586,11 +799,22 @@ footer a:hover {
 
 /* -- SCHEDULE PAGE --*/
 
+.schedule-background {
+    background: linear-gradient(
+        90deg,
+        #faf7f3 0%,
+        #fffdf8 24%,
+        #f6f1e9 50%,
+        #ffffff 74%,
+        #efe6d2 100%
+    );
+}
+
+
 #schedule-page {
     max-width: 1000px;
     margin: 0 auto;
     padding: 40px 80px 100px;
-    background-color: #faf7f3;
 }
 
 .schedule-item {
@@ -629,6 +853,7 @@ footer a:hover {
     color: #310101;
     margin-bottom: 15px;
     line-height: 1.4;
+    text-shadow: 1px 0px 1px rgba(49, 1, 1, 0.40);
 }
 
 .highlight-title {
@@ -702,7 +927,14 @@ footer a:hover {
     }
 
     .schedule-button:hover {
-        background-color: #5b3a34;
+        background: linear-gradient(
+        90deg,
+        #9c7b3a 0%,
+        #c8a96a 35%,
+        #f3e1a0 50%,
+        #c8a96a 65%,
+        #9c7b3a 100%
+    );
     }
 
 .masterclass-dates {
@@ -725,6 +957,18 @@ footer a:hover {
 
 /* manifesto */
 
+
+    .manifesto-page {
+        background: linear-gradient(
+            90deg,
+            #faf7f3 0%,
+            #fffdf8 24%,
+            #f6f1e9 50%,
+            #ffffff 74%,
+            #efe6d2 100%
+        );
+}
+
     #manifesto-header {
         padding: 220px 40px 120px;
         text-align: center;
@@ -736,14 +980,13 @@ footer a:hover {
         max-width: 900px;
         margin: 0 auto;
         color: #310101;
-        text-shadow: 1px 1px 2px rgba(49, 1, 1, 0.40);
+        text-shadow: 1px 0px 4px rgba(49, 1, 1, 0.40);
     }
 
     .manifesto-block {
         max-width: 850px;
         margin: 0 auto;
         padding: 80px 40px 120px;
-        background-color: #faf7f3;
     }
 
     .manifesto-author {
@@ -753,7 +996,7 @@ footer a:hover {
         color: #310101;
         margin-bottom: 50px;
         text-align: center;
-        text-shadow: 0.5px 0.5px 0.5px rgba(49, 1, 1, 0.40);
+        text-shadow: 0.5px 0px 1px rgba(49, 1, 1, 0.40);
     }
 
     .manifesto-text p {
@@ -762,12 +1005,32 @@ footer a:hover {
         color: #310101;
     }
 
+
     .manifesto-text p:first-child::first-letter {
+
+        font-family: "UnifrakturMaguntia";
+
         float: left;
-        font-size: 4rem;
+        font-size: 8rem;
         line-height: 0.8;
-        padding-right: 8px;
-        font-family: "Cormorant Garamond", serif;
+        margin-right: 10px;
+        padding-top: 15px;
+        margin-bottom: -30px;
+
+        background-image: linear-gradient(
+        90deg,
+        #9c7b3a 0%,
+        #c8a96a 35%,
+        #f3e1a0 50%,
+        #c8a96a 65%,
+        #9c7b3a 100%
+    );
+
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    color: transparent;
+    -webkit-text-fill-color: transparent;
     }
 
 /*-- RESPONSIVE --*/
@@ -870,6 +1133,10 @@ footer a:hover {
         height: 60px;
     }
 
+    .home-nav .nav-logo img.logo-full {
+        height: 60px;
+    }
+
     #hero {
         background-size: contain;
         background-repeat: no-repeat;
@@ -929,7 +1196,10 @@ footer a:hover {
     }
 
     /* about.html bio blocks */
-    .bio-block {
+
+
+    .bio-block, .bio-block.reverse {
+        flex-direction: column;
         padding: 30px 20px;
     }
 

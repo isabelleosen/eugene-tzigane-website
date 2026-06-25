@@ -463,3 +463,27 @@ if (schedulePage) {
     });
 }
 
+
+
+
+
+
+
+
+
+
+/* NAV SCROLL LOGO */
+
+const nav = document.querySelector("nav");
+const heroTitle = document.querySelector(".hero-overlay h1");
+
+window.addEventListener("scroll", () => {
+    const titleBottom = heroTitle.getBoundingClientRect().bottom;
+
+    if (titleBottom <= 0) {
+        nav.classList.add("scrolled");
+    } else {
+        nav.classList.remove("scrolled");
+    }
+});
+
