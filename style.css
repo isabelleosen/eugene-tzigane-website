@@ -18,6 +18,9 @@ body {
     color: #310101;
     padding-top: 120px;
     background-color: #faf7f3;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* -- NAVIGATION --*/
@@ -633,6 +636,8 @@ footer {
     color: #c2aaa3;
     font-size: 12px;
     letter-spacing: 1px;
+
+    margin-top: auto;
 }
 
 footer a {
@@ -1032,6 +1037,77 @@ footer a:hover {
     color: transparent;
     -webkit-text-fill-color: transparent;
     }
+
+/* media page */
+
+.media-page {
+    flex: 1;
+    
+     background: linear-gradient(
+            90deg,
+            #faf7f3 0%,
+            #fffdf8 24%,
+            #f6f1e9 50%,
+            #ffffff 74%,
+            #efe6d2 100%
+    );
+}
+
+#media-videos,
+#media-images {
+    width: 100%;
+    padding: 50px 4% 100px;
+}
+
+.media-heading {
+    margin-bottom: 2rem;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: 3rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    color: #7d5a18;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.media-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.youtube-video {
+    flex: 0 1 calc(33.333% - 2rem);
+}
+
+.youtube-video iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    border: none;
+    display: block;
+    border-radius: 12px;
+}
+
+@media (max-width: 1100px) {
+    .youtube-video {
+        flex-basis: calc(50% - 2rem);
+    }
+}
+
+@media (max-width: 700px) {
+    .youtube-video {
+        flex-basis: 100%;
+    }
+}
+
+
+
+
 
 /*-- RESPONSIVE --*/
 
