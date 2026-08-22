@@ -340,6 +340,55 @@ const events = [
         link: "https://www.liedfestival.net/liedakademie"
     }, 
 
+    {
+        month: "August",
+        day: "26",
+        title: "<span class='highlight-title'>Argentinian Debut</span> with Margarita Höhenrieder<br>(Córdoba)",
+        date: "Wednesday 26 August 2026",
+        time: "20:00",
+        venue: "Teatro del Libertador San Martín<br>Córdoba, Argentina",
+        programme: [
+            {
+                composer: "L. v. Beethoven",
+                piece: "Piano Concerto No. 4, op. 58"
+            },
+            {
+                composer: "F. Mendelssohn",
+                piece: 'Symphony No. 4 "Italian", op.90 '
+            }
+        ],
+        performers: [
+            "Orquesta Filarmónica de Córdoba",
+            "Margarita Höhenrieder, Piano"
+        ],
+        link: "https://ventas.autoentrada.com/events/orquesta-filarmonica-de-cordoba-margarita-hohenrieder"
+    },
+
+    {
+        month: "August",
+        day: "29",
+        title: "<span class='highlight-title'>Argentinian Debut</span> with Margarita Höhenrieder<br>(Buenos Aires)",
+        date: "Saturday 29 August 2026",
+        time: "17:00",
+        venue: "Teatro Colón<br>Buenos Aires, Argentina",
+        programme: [
+            {
+                composer: "L. v. Beethoven",
+                piece: "Piano Concerto No. 4, op. 58"
+            },
+            {
+                composer: "F. Mendelssohn",
+                piece: 'Symphony No. 4 "Italian", op.90 '
+            }
+        ],
+        performers: [
+            "Camerata Bariloche",
+            "Margarita Höhenrieder, Piano"
+        ],
+        link: "https://teatrocolon.org.ar/produccion/margarita-hohenrieder-y-la-camerata-bariloche/"
+    },
+
+
 
 
 
