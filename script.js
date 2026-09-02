@@ -388,6 +388,188 @@ const events = [
         link: "https://teatrocolon.org.ar/produccion/margarita-hohenrieder-y-la-camerata-bariloche/"
     },
 
+    {    
+        month: "September",
+        day: "25",
+        title: "<span class='highlight-title'>Filharmonia Pomorska</span>",
+        date: "Friday 25 September 2026",
+        time: "19:00",
+        venue: "Symphony Hall of the Feliks Kowowiejski Academy of Music<br>Bydgoszcz",
+        programme: [
+            {
+                composer: "John Foulds",
+                piece: "Dynamic Triptych"
+            },
+            {
+                composer: "Anton Bruckner",
+                piece: 'Symphony No. 9 in D minor, "Unfinished" '
+            }
+        ],
+        performers: [
+            "Filharmonia Pomorska",
+            "Tymoteusz Bies, Piano"
+        ],
+        link: "https://filharmonia.bydgoszcz.pl/kalendarz/niedokonczone/"
+    },
+
+    {    
+        month: "October",
+        day: "3",
+        title: "<span class='highlight-title'>Orchestre national d'Île-de-France</span>",
+        date: "Saturday 3 October 2026",
+        time: "20:30",
+        venue: "La Seine Musicale<br>Paris",
+        programme: [
+            {
+                composer: "Edvard Grieg",
+                piece: "Piano Concerto in A Minor, op. 16"
+            },
+            {
+                composer: "Antonín Dvořák",
+                piece: 'Symphony No. 9 in E minor, "From the New World" '
+            }
+        ],
+        performers: [
+            "Orchestre national d'Île-de-France",
+            "Takuma Ishii, Piano"
+        ],
+        link: "https://www.laseinemusicale.com/spectacles-concerts/grieg-dvorak-du-grand-nord-au-nouveau-monde-orchestre-national-ile-de-france-takuma-ishii/?utm_source=operabase.com&utm_medium=referral&utm_campaign=production-grieg-and-dvorak-du-grand-nord-au-nouveau-monde-649337&utm_content=ticket"
+    },
+
+    {    
+        month: "October",
+        day: "10",
+        title: "<span class='highlight-title'>Carmen/カルメン</span><br>Tokyo Nikikai Opera/東京二期会オペラ<br>Sapporo/札幌公演",
+        date: "Saturday 10 October 2026",
+        time: "13:00 札幌公演",
+        venue: "札幌文化芸術劇場 Hitaru",
+        isJapan: true,
+        programme: [
+            {
+                composer: "George Bizet",
+                piece: "CARMEN - Opera in four acts<br>Sung in the original language (French) with Japanese and English Supertitles"
+            },
+
+        ],
+        performers: [
+            "指揮 - ユージン・ツィガーン",
+            "演出・衣裳 - イリーナ・ブルック",
+            "カルメン - 加藤のぞみ",
+            "ドン・ホセ - 城 宏憲",
+            "エスカミーリョ - 今井俊輔",
+            "ミカエラ - 七澤 結"
+        ],
+        link: "https://nikikai.jp/en/lineup/carmen_sapporo/"
+    },
+
+    {    
+        month: "November",
+        day: "1",
+        title: "<span class='highlight-title'>Carmen/カルメン</span><br>Tokyo Nikikai Opera/東京二期会オペラ<br>Ōsaka/堺公演",
+        date: "Sunday 1 November 2026",
+        time: "14:00開演",
+        venue: "フェニーチェ堺 大ホール",
+        isJapan: true,
+        programme: [
+            {
+                composer: "George Bizet",
+                piece: "CARMEN - Opera in four acts<br>Sung in the original language (French) with Japanese and English Supertitles"
+            },
+
+        ],
+        performers: [
+            "指揮 - ユージン・ツィガーン",
+            "演出・衣裳 - イリーナ・ブルック",
+            "カルメン - 加藤のぞみ",
+            "ドン・ホセ - 澤原行正",
+            "エスカミーリョ - 与那城敬",
+            "ミカエラ - 宮地江奈"
+        ],
+        link: "https://nikikai.jp/en/lineup/carmen_sakai/"
+    },
+
+    {    
+        month: "November",
+        day: "27",
+        title: "<span class='highlight-title'>Silesian Philharmonic</span>",
+        date: "Friday 27 November 2026",
+        time: "19:00",
+        venue: "Concert Hall Karola Stryji, Silesian Philharmonic",
+        programme: [
+            {
+                composer: "K. Szymanowski",
+                piece: "Nocturne and Tarantella op. 28"
+            },
+            {
+                composer: "K. Szymanowski",
+                piece: "Violin Concerto No.2, op. 61"
+            },
+            {
+                composer: "H. Berlioz",
+                piece: '"Symphony Fantastique" in C Minor, op. 14'
+            }
+        ],
+        performers: [
+            "Silesian Philharmonic Symphony Orchestra",
+            "Seina Matsuoka, Violin"
+        ],
+        link: "https://filharmonia-slaska.eu/production/berlioz-symfonia-fantastyczna-moreno-tzigane-orkiestra-symfoniczna/"
+    },
+
+    {    
+        month: "December",
+        day: "3",
+        title: "<span class='highlight-title'>Kuopio Symphony Orchestra</span>",
+        date: "Thursday 3 December 2026",
+        time: "18:00",
+        venue: "Kuopio Music Centre Concert Hall",
+        programme: [
+            {
+                composer: "Jaakko Kuusisto",
+                piece: "Wiima Op. 27"
+            },
+            {
+                composer: "Sebastian Fagerlund",
+                piece: "Clarinet Concerto No. 2"
+            },
+            {
+                composer: "J. Brahms",
+                piece: "Symphony No. 1 in C Minor Op. 68"
+            }
+        ],
+        performers: [
+            "Kuopio Symphony Orchestra",
+            "Christoffer Sundqvist, Clarinet"
+        ],
+        link: "https://www.kuopionkaupunginorkesteri.fi/en/ohjelmisto/kausikonsertti-7-sebastian-fagerlund-christoffer-sundqvist/28556"
+    },
+
+    {    
+        month: "December",
+        day: "31",
+        title: "<span class='highlight-title'>Ōsaka - “Silvester Concert 2026”/</span><br>大阪 ジルベスター・コンサート2026",
+        date: "Thursday 31 December 2026/<br>2026年12月31日(木)",
+        time: "15:00/開演",
+        venue: "Kuopio Music Centre Concert Hall",
+        isJapan: true,
+        programme: [
+            {
+                composer: "Tchaikovsky, Fučík, Josef Strauß, Johann Strauß II, Rossini, Rachmaninoff",
+                piece: ""
+            },
+            {
+                composer: "チャイコフスキー, フチーク, ヨーゼフ・シュトラウス, ヨハン ・シュトラウスⅡ, ロッシーニ, ラフマニノフ",
+                piece: ""
+            }
+        ],
+        performers: [
+            "Japan Century Symphony Orchestra / 日本センチュリー交響楽団",
+            "Tomohiro Ushida - Piano / 牛田智大 - ピアノ"
+        ],
+        link: "https://www.symphonyhall.jp/event/2024138802/"
+    },
+
+
 
 
 
@@ -418,7 +600,7 @@ if (schedulePage) {
                     return `<p>${performer}</p><br>`;
                 }
 
-                return `<p>${performer}</p>`;   
+                return `<p>${performer}</p><br>`;   
             }).join("")
             : "";
 
